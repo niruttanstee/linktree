@@ -1,0 +1,24 @@
+#index-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#index-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.index-subheader {
+    font-family: "Lato", Helvetica, sans-serif;
+    color:black;
+    text-align: center;
+    line-height: 0px;
+}

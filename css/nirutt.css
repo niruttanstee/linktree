@@ -1,0 +1,98 @@
+body {
+    background-color: #0C1117;
+}
+* {
+    box-sizing: border-box;
+}
+p {
+    font-family: "Lato", Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+#content-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+#top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#profile-picture {
+    width: 195px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.profile-link {
+    font-weight: bold;
+    color: white;
+}
+
+.motto {
+    font-weight: normal;
+    margin-top: -10px;
+    color: white;
+}
+
+#links-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.link-button {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: transparent;
+    padding: 0px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 20px; 
+    background-color: #0077E6;
+}
+
+.link-button:hover {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #1a7fdd;
+    padding: 0px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button-image {
+    height: 35px;
+}
+
+.button-text {
+    padding-left: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    #profile-picture {
+        width: 150px;
+    }
+
+    .link-button {
+        width: 100%;
+    }
+}
