@@ -22,3 +22,9 @@ affect the buttons shown at the front page.
 👑 Overall this will enable the admin to
 efficiently add, edit or remove buttons without the need to
 hard code extra buttons in the HTML file and flush cache.
+
+> Wed 2 February 2022, this project is now classed as completed.
+
+### Backend example
+As I can't directly link the admin page due to security, I will demonstrate its functions to you below:
+![Adding buttons](https://imgur.com/a/An2sicg.gif)
