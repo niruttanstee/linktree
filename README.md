@@ -26,5 +26,6 @@ hard code extra buttons in the HTML file and flush cache.
 > Wed 2 February 2022, this project is now classed as completed.
 
 ### Backend example
-As I can't directly link the admin page due to security, I will demonstrate its functions to you below:
-![Adding buttons](https://i.imgur.com/jhzRm6R.gif)
+*As I can't directly link the admin page due to security, I will demonstrate its functions to you below:*
+
+>![Adding buttons](https://i.imgur.com/jhzRm6R.gif)
