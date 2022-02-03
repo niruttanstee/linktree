@@ -1,11 +1,24 @@
 <?php
     header("Cache-Control: max-age=31536001");
 ?>
+<?php
+const SAFE_TO_RUN = true;
+error_reporting(E_ERROR);
+$database_table = 'linktree-table';
+session_start();
+$js_file = "./js/validate.js";
+$js_notification = "./js/notification.js";
+$database_table = 'linktree-table';
+require './php/helper.php';
+require './php/database-connect.php';
+require "./php/read-form-input.php";
+$id = '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/nirutt.css?v=0.2">
+    <link rel="stylesheet" href="css/nirutt.css?v=0.3">
     <!-- Meta information -->
     <meta name="title" content="Nirutt Anstee Linktree">
     <meta name="description" content="A linktree website with buttons directing users to information about Nirutt Anstee.">
@@ -32,18 +45,15 @@
             <p class="motto">It's logical, said the Vulcan 🖖</p>
         </div>
         <div id="links-container">
-            <a href="https://github.com/niruttanstee?tab=overview&from=2022-01-01&to=2022-01-23" class="link-button">
-                <img class="button-image" src="images/white-github.svg" alt="">
-                <p class="button-text">Github</p>
+            <?php
+            $sql = "SELECT * FROM $database_table";
+            $result = $database->query($sql);
+            while ($row = $result->fetch_assoc()) { ?>
+            <a class="link-button" href="<?php _e($row, 'link') ?>">
+                <img class="button-image" src="/images/<?php _e($row, 'icon') ?>">
+                <p class="button-text"><?php _e($row, 'button_description') ?></p>
             </a>
-            <a href="https://github.com/nirutts/simple-linktree-web-application" class="link-button">
-                <img class="button-image" src="images/light-bulb_1f4a1.png" alt="An emoji of a light bulb.">
-                <p class="button-text">How I made this website</p>
-            </a>
-            <a href="https://github.com/nirutts/portfolio" class="link-button">
-                <img class="button-image" src="images/sign-of-the-horns_1f918.png" alt="An emoji of a rock sign using the hand.">
-                <p class="button-text">Portfolio website (Coming soon)</p>
-            </a>
+            <?php } ?>
         </div>
     </div>
 </body>
