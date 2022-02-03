@@ -28,4 +28,10 @@ hard code extra buttons in the HTML file and flush cache.
 ### Backend example
 *As I can't directly link the admin page due to security, I will demonstrate its functions to you below:*
 
->![Adding buttons](https://i.imgur.com/jhzRm6R.gif) <br>Adding buttons
+>![Adding buttons](https://i.imgur.com/jhzRm6R.gif) <br>Adding button
+
+>![Adding buttons](https://imgur.com/sKAUEt6.gif) <br>Editing button
+
+>![Adding buttons](https://imgur.com/1unSaxo.gif) <br>Buttons dynamically updates on the main site
+
+>![Adding buttons](https://imgur.com/iNsfl3J.gif) <br>Deleting button
