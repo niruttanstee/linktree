@@ -23,10 +23,8 @@ affect the buttons shown at the front page.
 efficiently add, edit or remove buttons without the need to
 hard code extra buttons in the HTML file and flush cache.
 
-> Wed 2 February 2022, this project is now classed as completed.
-
 ### Backend example
-*As I can't directly link the admin page due to security, I will demonstrate its functions to you below:*
+*As I can't directly link the admin page for security reasons, I will demonstrate its functions to you below:*
 
 >![Adding buttons](https://i.imgur.com/jhzRm6R.gif) <br>Adding button
 
